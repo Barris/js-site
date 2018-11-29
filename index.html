@@ -10,17 +10,20 @@
     <link rel="stylesheet" href="dropdown.css">
   </head>
   <body>
-    <div class="container" style="width: 50%; margin: 30px auto">
+    <div class="container" style="width: 90%; margin: 30px auto">
       <h1>Hello, world! How do you do today?</h1>
 
-      <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-          <div id="myDropdown" class="dropdown-content">
-              <a href="#" class="active">Home</a>
-              <a href="#">About</a>
-              <a href="#">Leave</a>
-          </div>
-      </div>
+      <form action="menu">
+        <fieldset>
+          <label for="menu">Where do you want to go?</label>
+          <select name="menu" id="menu">
+            <option selected="selected" value="/index.html">Home</option>
+            <option value="/about.html">About</option>
+            <option value="/leave.html">Leave</option>
+          </select>
+        </fieldset>
+      </form>
+    
     </div>
 
     <!-- Optional JavaScript -->
