@@ -15,24 +15,30 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="dropdown.css" />
   </head>
   <body>
     <div class="container" style="width: 90%; margin: 30px auto">
       <h1>Do you want to leave?</h1>
 
-      <form>
+      <form name="dropdown">
         <fieldset>
           <label for="menu">Where do you want to go?</label>
-          <select name="menu" id="menu">
-            <option selected="selected" value="/index.html">Home</option>
-            <option value="/about.html">About</option>
-            <option value="/leave.html">Leave</option>
+          <select
+            name="menu"
+            id="menu"
+            onchange="if (this.value) window.location.href=this.value"
+          >
+            <option value="index.html">Home</option>
+            <option value="about.html">About</option>
+            <option selected="selected" value="leave.html">Leave</option>
           </select>
         </fieldset>
       </form>
-    </div>
 
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus sit amet dictum sit amet justo. Eu scelerisque felis imperdiet proin fermentum leo vel. Nulla porttitor massa id neque aliquam vestibulum morbi blandit. Turpis cursus in hac habitasse platea dictumst quisque. Dignissim diam quis enim lobortis scelerisque. Mauris in aliquam sem fringilla ut morbi tincidunt. Scelerisque in dictum non consectetur. Viverra maecenas accumsan lacus vel facilisis volutpat. Nunc scelerisque viverra mauris in. Praesent tristique magna sit amet purus gravida.
+      </p>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -50,6 +56,6 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <script src="dropdown.js"></script>
+    <script></script>
   </body>
 </html>

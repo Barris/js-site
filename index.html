@@ -1,36 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="dropdown.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container" style="width: 90%; margin: 30px auto">
+    <div class="text-center align-top w-100">
+        <form name="dropdown">
+            <fieldset>
+              <label for="menu">Navigation:</label>
+              <select
+                name="menu"
+                id="menu"
+                onchange="if (this.value) window.location.href=this.value"
+              >
+                <option selected="selected" value="index.html">Home</option>
+                <option value="about.html">About</option>
+                <option value="leave.html">Leave</option>
+              </select>
+            </fieldset>
+          </form>
+    </div>
+
+    <div class="container m-auto">
       <h1>Hello, world! How do you do today?</h1>
 
-      <form action="menu">
-        <fieldset>
-          <label for="menu">Where do you want to go?</label>
-          <select name="menu" id="menu">
-            <option selected="selected" value="/index.html">Home</option>
-            <option value="/about.html">About</option>
-            <option value="/leave.html">Leave</option>
-          </select>
-        </fieldset>
-      </form>
-    
+      <div class="row border mt-2 p-2">
+        <div class="col-sm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Pellentesque diam volutpat commodo sed egestas egestas fringilla
+          phasellus. Nibh sed pulvinar proin gravida hendrerit. At ultrices mi
+          tempus imperdiet nulla. Molestie ac feugiat sed lectus vestibulum
+          mattis. Nec feugiat in fermentum posuere urna nec tincidunt. Odio ut
+          enim blandit volutpat maecenas. Consequat semper viverra nam libero
+          justo laoreet sit amet cursus. Eget nunc lobortis mattis aliquam. Id
+          aliquet risus feugiat in ante metus dictum. Malesuada bibendum arcu
+          vitae elementum curabitur. Ultrices dui sapien eget mi. Arcu risus
+          quis varius quam. In pellentesque massa placerat duis ultricies lacus
+          sed turpis. Id volutpat lacus laoreet non curabitur gravida arcu.
+          Pulvinar sapien et ligula ullamcorper malesuada.
+      </div>
+      <div class="col-sm">
+          Auctor eu augue ut lectus arcu bibendum at varius vel. Vulputate eu
+          scelerisque felis imperdiet proin fermentum leo vel. Varius morbi enim
+          nunc faucibus a pellentesque sit. Ultrices sagittis orci a
+          scelerisque. Sit amet aliquam id diam maecenas. Mi quis hendrerit
+          dolor magna. Cursus sit amet dictum sit amet justo donec. Iaculis at
+          erat pellentesque adipiscing commodo elit. Pharetra et ultrices neque
+          ornare. Ultrices in iaculis nunc sed augue lacus viverra. Sapien et
+          ligula ullamcorper malesuada proin libero nunc. Iaculis nunc sed augue
+          lacus viverra vitae congue eu consequat.
+      </div>
+      <div class="col-sm">
+          Scelerisque viverra mauris in aliquam. Justo laoreet sit amet cursus
+          sit amet dictum sit. Arcu odio ut sem nulla pharetra diam sit. Varius
+          sit amet mattis vulputate enim nulla. A cras semper auctor neque vitae
+          tempus. Netus et malesuada fames ac turpis egestas integer eget
+          aliquet. Massa massa ultricies mi quis hendrerit dolor magna eget est.
+          Velit dignissim sodales ut eu sem. Ut tortor pretium viverra
+          suspendisse potenti nullam ac tortor. Feugiat nisl pretium fusce id.
+          Odio facilisis mauris sit amet. Tempor commodo ullamcorper a lacus
+          vestibulum sed arcu non odio. Aenean et tortor at risus. Diam sit amet
+          nisl suscipit adipiscing bibendum est. Quam vulputate dignissim
+          suspendisse in est ante in nibh.
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="dropdown.js"></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script></script>
+  </body>
 </html>
